@@ -1,6 +1,9 @@
+<script lang="ts" setup>
+import {btnOptions} from '@/views/common/options'
+</script>
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Button v-for="item in btnOptions" :key="item.value" :type="item.type">{{ item.name }}</Button>
   </div>
 </template>
 
